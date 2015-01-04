@@ -1,4 +1,4 @@
 Robotics_Project
 ================
-
-Robotics Project Files
+The main objective of this robotics project is to gain practical knowledge concerning advantages and limitations of techniques to accompany detailed theoretical knowledge on robotics design while achieving the required critical understanding of advanced image processing techniques. Under this scope a simple scenario of autonomous indoor patrolling turtlebot was developed in order for human detection to be carried out in a limited area that needs to be supervised remotely. The primary intention for the turtlebot is to produce an automatic routine check on an already known route while standing or walking people on a ground plane can be detected, when the robot is close to specific landmarks.
+For this purpose, the construction of the map together with the autonomous navigation part was written in Python while the human detection algorithm was implemented in C++.
