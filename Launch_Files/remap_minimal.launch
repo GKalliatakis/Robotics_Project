@@ -1,0 +1,4 @@
+<launch>
+  <remap from="mobile_base/commands/velocity" to="cmd_vel" />
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+</launch>
