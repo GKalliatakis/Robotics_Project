@@ -1,0 +1,24 @@
+The procedure to install [depthimage_to_laserscan] on the Turtlebot
+Original information found at:
+http://answers.ros.org/question/62979/how-do-i-use-pcl-17-with-groovy/#post-id-191202
+
+$ mkdir -p laserscan_ws/src
+$ cd laserscan_ws/src
+$ git clone https://github.com/ros-perception/depthimage_to_laserscan -b groovy-unstable-devel
+$ catkin_init_workspace
+$ cd ..
+$ catkin_make_isolated    # this step takes awhile
+$ cd <your rosbuild groovy workspace>
+$ vim .rosinstall
+
+change this line:
+
+- setup-file: {local-name: /opt/ros/groovy/setup.sh}
+
+to this:
+
+- setup-file: {local-name: path/to/laserscan_ws/devel_isolated/setup.sh}
+
+Now,
+
+$ source setup.bash
